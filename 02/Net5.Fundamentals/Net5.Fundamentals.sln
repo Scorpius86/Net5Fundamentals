@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Net5.Fundamentals.TypesAndOperators", "Net5.Fundamentals.TypesAndOperators\Net5.Fundamentals.TypesAndOperators.csproj", "{15B5BE2A-D9B6-4D10-82D5-C8FE97E4FC29}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{15B5BE2A-D9B6-4D10-82D5-C8FE97E4FC29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15B5BE2A-D9B6-4D10-82D5-C8FE97E4FC29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15B5BE2A-D9B6-4D10-82D5-C8FE97E4FC29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15B5BE2A-D9B6-4D10-82D5-C8FE97E4FC29}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7C865FD5-D2B6-4045-A6A3-3C483036D78F}
+	EndGlobalSection
+EndGlobal
