@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Net5.Fundamentals.TypesAndOperators", "Net5.Fundamentals.TypesAndOperators\Net5.Fundamentals.TypesAndOperators.csproj", "{15B5BE2A-D9B6-4D10-82D5-C8FE97E4FC29}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Net5.Fundamentals.ControlStructs", "Net5.Fundamentals.ControlStructs\Net5.Fundamentals.ControlStructs.csproj", "{BE479CD3-452A-45D5-9B9E-6CDF9498D59D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Net5.Fundamentals.ControlStructs", "Net5.Fundamentals.ControlStructs\Net5.Fundamentals.ControlStructs.csproj", "{BE479CD3-452A-45D5-9B9E-6CDF9498D59D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Net5.Fundamentals.ControlStructures", "Net5.Fundamentals.ControlStructures\Net5.Fundamentals.ControlStructures.csproj", "{8052AEE6-B849-4C49-A7B5-8243D54DAFCA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{BE479CD3-452A-45D5-9B9E-6CDF9498D59D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BE479CD3-452A-45D5-9B9E-6CDF9498D59D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BE479CD3-452A-45D5-9B9E-6CDF9498D59D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8052AEE6-B849-4C49-A7B5-8243D54DAFCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8052AEE6-B849-4C49-A7B5-8243D54DAFCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8052AEE6-B849-4C49-A7B5-8243D54DAFCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8052AEE6-B849-4C49-A7B5-8243D54DAFCA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
