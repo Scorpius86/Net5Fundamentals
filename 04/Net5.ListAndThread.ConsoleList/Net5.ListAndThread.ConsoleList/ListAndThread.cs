@@ -1,8 +1,11 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace Net5.ListAndThread.ConsoleList
 {
@@ -250,6 +253,144 @@ namespace Net5.ListAndThread.ConsoleList
             Console.WriteLine(people[0].Item1);
             Console.WriteLine(people[0].Item3.Item2);
 
+        }
+
+        public void ValueTupleSample()
+        {
+            Console.WriteLine("ValueTuple");
+            Console.WriteLine("==========");
+
+            (string, string, int, string) person = ("12345678", "Erick", 39, "M");
+                        
+            Console.WriteLine(person.Item1);
+            Console.WriteLine(person.Item2);
+            Console.WriteLine(person.Item3);
+            Console.WriteLine(person.Item4);
+        }
+
+        public void ThreadSample()
+        {
+            Console.WriteLine("Thread");
+            Console.WriteLine("======");
+            ParallelProcess parallelProcess = new ParallelProcess();
+            
+            Thread th1 = new Thread(new ThreadStart(parallelProcess.WriteProcess01));
+            Thread th2 = new Thread(new ThreadStart(parallelProcess.WriteProcess02));
+
+            th1.Start();
+            th2.Start();
+
+            //parallelProcess.WriteProcess01();
+            //parallelProcess.WriteProcess02();
+        }
+
+        public void TaskSample()
+        {
+            Console.WriteLine("Task");
+            Console.WriteLine("======");
+            ParallelProcess parallelProcess = new ParallelProcess();
+
+            Task[] tasks = new Task[2];
+            string taskName01 = "Tarea 01";
+            string taskName02 = "Tarea 02";
+
+            tasks[0] = Task.Factory.StartNew((Object obj)=> {
+                TaskParameter param = (TaskParameter)obj;
+                parallelProcess.WriteProcess01(param.Name);
+            },new TaskParameter {Name = taskName01});
+
+            tasks[1] = Task.Factory.StartNew((Object obj) => {
+                TaskParameter param = (TaskParameter)obj;
+                parallelProcess.WriteProcess02(param.Name);
+            }, new TaskParameter { Name = taskName02 });
+
+            Task.WaitAll(tasks);
+            //parallelProcess.WriteProcess01();
+            //parallelProcess.WriteProcess02();
+        }
+
+        public void StreamReaderSample()
+        {
+            Console.WriteLine("StreamReader");
+            Console.WriteLine("============");
+            ParallelProcess parallelProcess = new ParallelProcess();
+
+            StreamReader sr = new StreamReader("Sample.txt");
+
+            string line = sr.ReadLine();
+
+            while (line != null)
+            {
+                Console.WriteLine(line);
+                line = sr.ReadLine();
+            }
+
+
+        }
+
+        public void StreamWriterSample()
+        {
+            Console.WriteLine("StreamWrite");
+            Console.WriteLine("============");
+            ParallelProcess parallelProcess = new ParallelProcess();
+
+            StreamWriter sr = new StreamWriter("Writer.txt");
+            sr.WriteLine("Texto 01");
+            sr.WriteLine("Texto 02");
+            sr.WriteLine("Texto 03");
+            sr.Close();
+        }
+
+    }
+
+    public class TaskParameter
+    {
+        public string Name { get; set; }
+    }
+
+    public class ParallelProcess
+    {
+        public void WriteProcess01()
+        {
+            for (int i = 0; i < 5; i++)
+            {
+                Console.WriteLine($"Escribiendo desde el proceso 01 (i) -> : {i}");
+                Random rnd = new Random();
+                int waitTime = rnd.Next(1, 100);
+                Thread.Sleep(waitTime * 100);
+            }
+        }
+        public void WriteProcess01(string name)
+        {
+            for (int i = 0; i < 5; i++)
+            {
+                Console.WriteLine($"Escribiendo desde la {name} (i) -> : {i}");
+                Random rnd = new Random();
+                int waitTime = rnd.Next(1, 100);
+                Thread.Sleep(waitTime*100);
+            }
+        }
+
+        public void WriteProcess02()
+        {
+            for (int i = 0; i < 5; i++)
+            {
+                Console.WriteLine($"Escribiendo desde el proceso 02 (i) -> : {i}");
+                Random rnd = new Random();
+                int waitTime = rnd.Next(1, 100);
+                Thread.Sleep(waitTime * 10);
+            }
+        }
+
+        public void WriteProcess02(string name)
+        {
+            for (int i = 0; i < 5; i++)
+            {
+                Console.WriteLine($"Escribiendo desde la {name} (i) -> : {i}");
+                Random rnd = new Random();
+                int waitTime = rnd.Next(1, 100);
+                Thread.Sleep(waitTime * 10);
+            }
         }
     }
 }

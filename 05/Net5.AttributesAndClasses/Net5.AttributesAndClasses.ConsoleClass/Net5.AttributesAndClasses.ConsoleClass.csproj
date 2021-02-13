@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Net5.AttributesAndClasses.LibraryClasses\Net5.AttributesAndClasses.LibraryClasses.csproj" />
+  </ItemGroup>
+
+</Project>
