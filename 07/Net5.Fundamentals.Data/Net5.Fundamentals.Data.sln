@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Net5.Fundamentals.Data.ClientConsole", "Net5.Fundamentals.Data.ClientConsole\Net5.Fundamentals.Data.ClientConsole.csproj", "{BD7B0F98-9FFA-4161-A5E5-D236B6640AED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Net5.Fundamentals.Data.Client.MVC", "Net5.Fundamentals.Data.Client.MVC\Net5.Fundamentals.Data.Client.MVC.csproj", "{BCB586A6-E36B-40E0-ABE8-6CB6A99332E7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BD7B0F98-9FFA-4161-A5E5-D236B6640AED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD7B0F98-9FFA-4161-A5E5-D236B6640AED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD7B0F98-9FFA-4161-A5E5-D236B6640AED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD7B0F98-9FFA-4161-A5E5-D236B6640AED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCB586A6-E36B-40E0-ABE8-6CB6A99332E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCB586A6-E36B-40E0-ABE8-6CB6A99332E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCB586A6-E36B-40E0-ABE8-6CB6A99332E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCB586A6-E36B-40E0-ABE8-6CB6A99332E7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DF3CCFFD-4C43-43A9-B08D-86B558CCCBFC}
+	EndGlobalSection
+EndGlobal

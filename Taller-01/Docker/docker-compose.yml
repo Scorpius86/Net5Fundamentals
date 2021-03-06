@@ -1,0 +1,23 @@
+version: '3.4'
+
+services:
+########################################################## microservices.demo.policy.db ##################################################################################
+  sqlserver2019:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    ports:
+      - 1433:1433 
+    environment:
+      - SA_PASSWORD=Password1234
+      - ACCEPT_EULA=Y
+    volumes:
+      - ./Data:/var/opt/mssql/data
+      - ./Log:/var/opt/mssql/log
+      - ./Secrets:/var/opt/mssql/secrets
+    networks:
+      - backend
+########################################################## networks #######################################################################################################
+networks:
+  backend:
+    name: backend
+    driver: bridge
+
