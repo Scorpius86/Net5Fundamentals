@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Net5.Fundamentals.AspNet.Client", "Net5.Fundamentals.AspNet.Client\Net5.Fundamentals.AspNet.Client.csproj", "{7842C256-31BC-46FA-AF15-B67DE650E1AC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Net5.Fundamentals.AspNet.Data", "Net5.Fundamentals.AspNet.Data\Net5.Fundamentals.AspNet.Data.csproj", "{D071F1D9-A161-4B0F-8CA1-71D79C29A7B1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7842C256-31BC-46FA-AF15-B67DE650E1AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7842C256-31BC-46FA-AF15-B67DE650E1AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7842C256-31BC-46FA-AF15-B67DE650E1AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7842C256-31BC-46FA-AF15-B67DE650E1AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D071F1D9-A161-4B0F-8CA1-71D79C29A7B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D071F1D9-A161-4B0F-8CA1-71D79C29A7B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D071F1D9-A161-4B0F-8CA1-71D79C29A7B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D071F1D9-A161-4B0F-8CA1-71D79C29A7B1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C5E457D0-91CF-4393-8C29-0F498C249D8F}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,49 @@
+﻿@page
+@model Net5.Fundamentals.AspNet.Client.Pages.Customer.CreateModel
+<h1>Create</h1>
+<h4>Customer</h4>
+<hr/>
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">            
+            <div class="form-group">
+                <label asp-for="Customer.FirstName" class="control-label"></label>
+                <input asp-for="Customer.FirstName" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Customer.LastName" class="control-label"></label>
+                <input asp-for="Customer.LastName" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Customer.Phone" class="control-label"></label>
+                <input asp-for="Customer.Phone" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Customer.Email" class="control-label"></label>
+                <input asp-for="Customer.Email" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Customer.Street" class="control-label"></label>
+                <input asp-for="Customer.Street" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Customer.City" class="control-label"></label>
+                <input asp-for="Customer.City" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Customer.State" class="control-label"></label>
+                <input asp-for="Customer.State" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Customer.ZipCode" class="control-label"></label>
+                <input asp-for="Customer.ZipCode" class="form-control" />
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
